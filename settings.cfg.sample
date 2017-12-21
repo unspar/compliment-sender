@@ -1,0 +1,8 @@
+COMPLIMENT_LOCATION = "./static/compliments.txt"
+TWILIO_SID= "<your sid>"
+TWILIO_TOKEN="<your token>"
+TO_NUMBER="<your phone to call>"
+FROM_NUMBER="<your twilio phone #>"
+
+TWIML_SMS_URL="http://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient"
+TWIML_PHONE_URL="http://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient"
