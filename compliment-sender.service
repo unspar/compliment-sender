@@ -1,0 +1,16 @@
+
+[Unit]
+Description=Gunicorn instance to serve compliments
+After=network.target
+
+[Service]
+User=tash
+Group=www-data
+WorkingDirectory=/home/tash/compliment-sender
+Environment="FLASK_CONFIG=./settings.cfg"
+ExecStart=gunicorn --workers 3 --bind unix:compliments.sock -m 007 run:app
+
+[Install]
+WantedBy=multi-user.target
+
+
