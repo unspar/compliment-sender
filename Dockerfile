@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:kinetic-20220830
 MAINTAINER Tadashi Kamitaki "tkamitaki@gmail.com"
 RUN apt-get update -y
 RUN apt-get install -y python3-pip python3-dev build-essential nginx
